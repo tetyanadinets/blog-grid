@@ -1,0 +1,119 @@
+*{
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+body{
+	background-color: #e2e7ec;
+}
+
+p{
+	margin: 0;
+}
+
+.bg-flex{
+	max-width: 1140px;
+	margin: 90px auto;
+
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+
+}
+
+.bg-item{
+	min-height: 540px;
+
+	background-color: #fff;
+
+	-webkit-flex-grow: 1;
+	        flex-grow: 1;
+	-webkit-flex-basis: 360px;
+	        flex-basis: 360px;
+
+	margin: 0 10px 20px;
+	overflow: hidden;
+	position: relative;
+}
+
+.bg-item-huge{
+	-webkit-flex-basis: 740px;
+	        flex-basis: 740px;
+	-webkit-flex-grow: 2;
+	        flex-grow: 2;
+	 line-height: 0;
+
+}
+.bg-item-huge__photo{
+	min-width: 100%;
+	min-height: 100%;
+}
+.bg-item__link, .bg-item-huge__link{
+	display: block;
+	position: relative;
+	text-decoration: none;
+}
+.bg-item-huge__info{
+	position: absolute;
+	left: 40px;
+	right: 40px;
+	bottom: 40px;
+
+}
+.bg-item-huge__date{
+	font-size: 13px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: #818181;
+	letter-spacing: 0.025em;
+}
+.bg-item-huge__text{
+	font-size: 30px;
+	line-height: 36px;
+	letter-spacing: 0.025em;
+	text-transform: uppercase;
+	color: #FFF;
+	padding-right: 40%;
+}
+.bg-item-huge__shadow{
+	position: absolute;
+	right: 0;
+	top: 0;
+	left: 0;
+	bottom: 0;
+background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+.bg-item__photo{
+	min-width: 100%;
+	height: 251px;
+}
+.bg-item__date{
+	padding: 28px 0 28px 21px;
+	color: #818181;
+	font-size: 13px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.bg-item__text{
+	color: #1d1c1c;
+	font-size: 22px;
+	font-weight: 800;
+	padding: 0 21px;
+	text-transform: uppercase;
+}
+.bg-item__author{
+	display: inline-block;
+	position: absolute;
+	left: 28px;
+	bottom: 25px;
+
+}
+.bg-item__author img{
+	width: 54px;
+	height: 54px;
+}
